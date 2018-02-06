@@ -352,12 +352,32 @@ paths:
               - enabled
               - status
             properties:
+<<<<<<< HEAD
+=======
+              status:
+                type: string
+                example: pinned
+                description: |
+                  A lowercase string. Valid values shown above.
+                enum:
+                  - closed
+                  - pinned
+                  - pinned-globally
+                  - archived
+                  - visible
+>>>>>>> 2160a9f... added update status
               enabled:
                 type: boolean
                 example: true
               status:
                 type: string
+<<<<<<< HEAD
                 example: closed
+=======
+                example: '2018-12-31'
+                description: |
+                  Only required for pinned and pinned-globally.
+>>>>>>> 2160a9f... added update status
       responses:
         200:
           description: close a topic response
